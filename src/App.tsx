@@ -1,5 +1,6 @@
 import Hero from "./components/Hero"
 import { CssGlobal } from "./styles"
+import CardList from "./components/CardList"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <CssGlobal />
       <Hero />
+      <CardList />
     </>
   )
 }

@@ -1,29 +1,28 @@
 import Card from '../Card'
+import { List } from './styles'
 
 const CardList = () => (
-    <div>
-        <div className="container">
-            <ul>
-                <li>
-                    <Card />
-                </li>
-                <li>
-                    <Card />
-                </li>
-                <li>
-                    <Card />
-                </li>
-                <li>
-                    <Card />
-                </li>
-                <li>
-                    <Card />
-                </li>
-                <li>
-                    <Card />
-                </li>
-            </ul>
-        </div>
+    <div className="container">
+        <List>
+            <li>
+                <Card />
+            </li>
+            <li>
+                <Card />
+            </li>
+            <li>
+                <Card />
+            </li>
+            <li>
+                <Card />
+            </li>
+            <li>
+                <Card />
+            </li>
+            <li>
+                <Card />
+            </li>
+        </List>
     </div>
 )
 

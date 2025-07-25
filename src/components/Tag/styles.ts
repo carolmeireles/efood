@@ -1,11 +1,10 @@
 import styled from "styled-components"
 import { cores } from "../../styles"
 
-export const BotaoTag = styled.button`
+export const TagContainer = styled.div`
     background-color: ${cores.rosa};
     color: ${cores.rosaClaro};
-    padding: 6px 4px;
+    padding: 4px 6px;
     font-weight: bold;
-    font-size: 14px;
-    border: none;
+    font-size: 12px;
 `

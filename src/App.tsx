@@ -1,6 +1,7 @@
 import Hero from "./components/Hero"
 import { CssGlobal } from "./styles"
 import CardList from "./components/CardList"
+import Footer from './components/Footer'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <CssGlobal />
       <Hero />
       <CardList />
+      <Footer />
     </>
   )
 }

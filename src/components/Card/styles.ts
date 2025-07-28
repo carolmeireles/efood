@@ -43,7 +43,7 @@ export const Desc = styled.p`
 
 export const Button = styled.button`
     background-color: ${cores.rosa};
-    color: ${cores.rosaClaro};
+    color: ${cores.begeClaro};
     padding: 6px 4px;
     font-weight: bold;
     font-size: 14px;

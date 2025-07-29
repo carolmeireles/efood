@@ -1,17 +1,17 @@
-import Hero from "./components/Hero"
+import { BrowserRouter } from "react-router-dom"
+
+import Rotas from './routes'
 import { CssGlobal } from "./styles"
-import CardList from "./components/CardList"
 import Footer from './components/Footer'
 
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <CssGlobal />
-      <Hero />
-      <CardList />
+      <Rotas />
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 

@@ -4,26 +4,29 @@ import facebook from '../../assets/facebook.png'
 import twitter from '../../assets/twitter.png'
 import { Container, Disclaimer, SocialLinks } from './styles'
 import { Logo } from '../Footer/styles'
+import { Link } from 'react-router-dom'
 
 const Footer = () => (
     <Container>
         <div className="container">
             <Logo>
-                <img src={logo} alt="efood" />
+                <Link to='/'>
+                    <img src={logo} alt="efood" />
+                </Link>
             </Logo>
             <SocialLinks>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/" target='_blank'>
                         <img src={instagram} alt="Instagram" />
                     </a>
                 </li>
                 <li className='facebook'>
-                    <a href="#">
+                    <a href="https://www.facebook.com/" target='_blank' >
                         <img src={facebook} alt="Facebook" />
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://x.com/" target='_blank'>
                         <img src={twitter} alt="Twitter" />
                     </a>
                 </li>

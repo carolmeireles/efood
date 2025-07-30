@@ -1,6 +1,6 @@
 import { Header, Logo, Slogan } from './styles'
 import logo from '../../assets/logo.png'
-import fundo from '../../assets/fundo.png'
+import fundo from '../../assets/fundo1.png'
 import { Link } from 'react-router-dom'
 
 const Hero = () => (

@@ -2,6 +2,7 @@ import sushi from '../../assets/sushi.png'
 import estrela from '../../assets/estrela.png'
 import { Button, CardContainer, Desc, Tags, Title, TitleContainer } from './styles'
 import Tag from '../Tag'
+import { Link } from 'react-router-dom'
 
 const Card = () => (
     <CardContainer>
@@ -24,7 +25,9 @@ const Card = () => (
         <Desc>
             Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente o Japão sem sair do lar com nosso delivery!
         </Desc>
-        <Button>Saiba mais</Button>
+        <Link to='/prato'>
+            <Button>Saiba mais</Button>
+        </Link>
     </CardContainer>
 )
 

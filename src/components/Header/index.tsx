@@ -6,9 +6,9 @@ import { HeaderStyle } from './styles'
 const Header = () => (
     <HeaderStyle style={{ backgroundImage: `url(${fundo})` }}>
         <div className="container">
-            <a href="#">
+            <Link to='/'>
                 Restaurantes
-            </a>
+            </Link>
             <Link to='/'>
                 <img src={logo} alt="efood" />
             </Link>

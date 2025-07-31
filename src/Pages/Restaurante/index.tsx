@@ -1,11 +1,11 @@
 import Banner from "../../components/Banner"
 import Header from "../../components/Header"
 
-const Prato = () => (
+const Restaurante = () => (
     <>
         <Header />
         <Banner />
     </>
 )
 
-export default Prato
+export default Restaurante

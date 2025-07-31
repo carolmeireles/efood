@@ -9,7 +9,9 @@ const Header = () => (
             <a href="#">
                 Restaurantes
             </a>
-            <img src={logo} alt="efood" />
+            <Link to='/'>
+                <img src={logo} alt="efood" />
+            </Link>
             <Link to='#'>0 produto(s) no carrinho</Link>
         </div>
     </HeaderStyle>

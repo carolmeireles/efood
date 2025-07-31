@@ -1,4 +1,4 @@
-import sushi from '../../assets/sushi.png'
+import massa from '../../assets/massa.png'
 import estrela from '../../assets/estrela.png'
 import { Button, CardContainer, Desc, Tags, Title, TitleContainer } from './styles'
 import Tag from '../Tag'
@@ -6,24 +6,21 @@ import { Link } from 'react-router-dom'
 
 const Card = () => (
     <CardContainer>
-        <img src={sushi} alt="Sushi" />
+        <img src={massa} alt="massa" />
         <Tags>
             <Tag>
-                Destaque da semana
-            </Tag>
-            <Tag>
-                Japonesa
+                Italiana
             </Tag>
         </Tags>
         <TitleContainer>
-            <Title>Hioki Sushi</Title>
+            <Title>La Dolce Vita Trattoria</Title>
             <div>
-                4.9
+                4.6
                 <img src={estrela} alt="Estrela" />
             </div>
         </TitleContainer>
         <Desc>
-            Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente o Japão sem sair do lar com nosso delivery!
+            A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!
         </Desc>
         <Link to='/restaurante'>
             <Button>Saiba mais</Button>

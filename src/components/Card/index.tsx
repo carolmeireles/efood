@@ -1,28 +1,37 @@
-import massa from '../../assets/massa.png'
+import { Link } from 'react-router-dom'
+
 import estrela from '../../assets/estrela.png'
 import { Button, CardContainer, Desc, Tags, Title, TitleContainer } from './styles'
 import Tag from '../Tag'
-import { Link } from 'react-router-dom'
 
-const Card = () => (
+type Props = {
+    imagem: string
+    tags: string[]
+    titulo: string
+    nota: number
+    desc: string
+    link: string
+}
+
+const Card = ({ imagem, tags, titulo, nota, desc, link }: Props) => (
     <CardContainer>
-        <img src={massa} alt="massa" />
+        <img src={imagem} alt="massa" />
         <Tags>
-            <Tag>
-                Italiana
-            </Tag>
+            {tags.map((tag) => (
+                <Tag key={tag}>{tag}</Tag>
+            ))}
         </Tags>
         <TitleContainer>
-            <Title>La Dolce Vita Trattoria</Title>
+            <Title>{titulo}</Title>
             <div>
-                4.6
+                {nota}
                 <img src={estrela} alt="Estrela" />
             </div>
         </TitleContainer>
         <Desc>
-            A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!
+            {desc}
         </Desc>
-        <Link to='/restaurante'>
+        <Link to={link}>
             <Button>Saiba mais</Button>
         </Link>
     </CardContainer>

@@ -6,7 +6,6 @@ export const CardContainer = styled.div`
     border: 1px solid ${cores.rosa};
     position: relative;
     font-size: 14px;
-    //padding: 8px;
 `
 
 export const Tags = styled.div`
